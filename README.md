@@ -18,14 +18,33 @@ Mosslight is a small fictional world inhabited by Pip (a moss-spark), Mumo (a cl
 - `models/laughing-overflow/vocabulary.json` — tokenizer vocabulary
 - `models/laughing-overflow/training_report.json` — measurements and limitations
 - `models/laughing-overflow/generate.py` — minimal inference script
+- `scripts/import_full_package.sh` — imports the two larger assets from the original ZIP
 
-## Package transfer status
-The original v0.2 ZIP also contains the full `training_data.jsonl` and trained `littlethinker_overflow.pt` weights. Those two files are not yet committed here; retain the original ZIP as the complete source package until they are added.
+## Add the complete model assets
+
+The original v0.2 ZIP contains the full `training_data.jsonl` corpus and trained `littlethinker_overflow.pt` weights. These are ordinary Git files at their current sizes; Git LFS is not required.
+
+1. Download and extract `littlethinker_laughing_overflow_v0_2.zip` from the original ChatGPT conversation.
+2. Clone this repository and enter its folder:
+   ```bash
+   git clone -b dd-main https://github.com/Kawhooped/Little-Thinker-Lab.git
+   cd Little-Thinker-Lab
+   ```
+3. Run the import helper, passing the extracted package folder:
+   ```bash
+   bash scripts/import_full_package.sh /path/to/littlethinker_laughing_overflow
+   ```
+4. Push the commit:
+   ```bash
+   git push origin dd-main
+   ```
+
+The helper checks that both source files exist before copying them into the repository.
 
 ## Run
-Requires Python and PyTorch. Put `littlethinker_overflow.pt` beside `generate.py`, then run:
+Requires Python and PyTorch. After importing the weights, run:
 ```bash
-python generate.py --prompt "<BOS> <LAUGH_TRIGGER> <TURN>"
+python models/laughing-overflow/generate.py --prompt "<BOS> <LAUGH_TRIGGER> <TURN>"
 ```
 
 ## Principles
