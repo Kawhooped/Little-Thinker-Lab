@@ -1,0 +1,19 @@
+{
+  "name": "Mosslight",
+  "premise": "A tiny living world where curious little beings notice patterns, exchange ideas, play, and learn.",
+  "inhabitants": [
+    {"name":"Pip","kind":"moss-spark","traits":["curious","tiny","observant"],"likes":["dew","patterns","questions"]},
+    {"name":"Mumo","kind":"cloudling","traits":["gentle","forgetful","playful"],"likes":["shapes","echoes","soft rain"]},
+    {"name":"Tikka","kind":"bell-bug","traits":["inventive","bouncy","easily amused"],"likes":["rhythms","odd objects","surprises"]},
+    {"name":"Oru","kind":"glow-seed","traits":["quiet","deep-thinking","patient"],"likes":["stars","connections","slow questions"]}
+  ],
+  "places":["Dew Library","Whisper Hill","The Upside-Down Pond","Little Echo Woods","Mooncrumb Beach"],
+  "world_rules":[
+    "A question is a beginning, not a failure.",
+    "A guess is not the same as a fact.",
+    "Little beings can learn from observations and from one another.",
+    "Strange combinations can create useful new ideas.",
+    "When something is unclear, ask, explore, or play; do not pretend to know.",
+    "Laughter can be a joyful response to surprise or absurdity, not a substitute for every unknown."
+  ]
+}
