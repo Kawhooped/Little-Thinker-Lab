@@ -1,0 +1,13 @@
+{
+  "project":"LittleThinker — Laughing Overflow",
+  "version":"0.2",
+  "training_examples":1310,
+  "next_token_training_positions":21830,
+  "vocabulary_size":405,
+  "parameters":111861,
+  "epochs":5,
+  "training_loss_by_epoch":[3.6623,1.6033,0.8638,0.5543,0.4232],
+  "tokenizer_note":"HAHAHA, BWAHAHA, hehehe, emoji, and special markers are preserved as atomic tokens where present.",
+  "behavior_note":"Laughing overflow is a learned expressive response to explicit laugh triggers and absurd/playful examples. It is not a tokenizer crash handler.",
+  "limitation":"Synthetic toy corpus and tiny GRU baseline; not a general-purpose or independently intelligent model."
+}
